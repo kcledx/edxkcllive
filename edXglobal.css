@@ -1,0 +1,475 @@
+/*********** IMAGE CAPTIONS *********/
+
+
+  .image{
+margin: 0 0 1em 0;
+}
+
+
+.image span{
+  font-size: 0.8em;
+
+}
+
+/*********** BLOCKQUOTES ***********/
+  
+  blockquote {
+  border-left: 5px solid #56c1fa;
+  padding: 1px 20px 1px 30px;
+  color: #454545;
+  line-height: 1.6em !important;
+}
+
+  blockquote span {
+  margin-top: 0.5em;
+  display: block;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+
+/*********** CALLOUT BOXES ***********/
+
+.callbox_basic { /* BASIC */
+  border-radius: 10px;
+  background: #f7f7f7;
+  padding: 30px;
+  margin: 0 0 1em 0;
+}
+
+.callbox_basicline {
+  border-radius: 10px;
+  border: 2px solid #f7f7f7;
+  padding: 30px;
+  margin: 0 0 1em 0;
+}
+
+.callbox_learnmore { /* LEARN MORE */
+  border-radius: 10px;
+  background: #f7f7f7;
+  padding: 50px 30px 30px 30px;
+  margin: 0 0 1em 0;
+}
+
+.callbox_learnmore h3 {
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 75px; /* Adjust this value based on your icon size */
+}
+
+.callbox_learnmore h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28%;
+  transform: translateY(-50%);
+  width: 60px; /* Adjust based on your icon size */
+  height: 60px; /* Adjust based on your icon size */
+  background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_learnmore_icon_pink_120x120.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+  .callbox_outcomes {  /* LEARNING OUTCOMES */
+  border-radius: 10px;
+  background: #f7f7f7;
+  padding: 50px 30px 30px 30px;
+  margin: 0 0 1em 0;
+}
+
+.callbox_outcomes h3 {
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 75px; /* Adjust this value based on your icon size */
+}
+
+.callbox_outcomes h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28%;
+  transform: translateY(-50%);
+  width: 60px; /* Adjust based on your icon size */
+  height: 60px; /* Adjust based on your icon size */
+  background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_learningoutcomes_icon_color_120x120.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.callbox_activity {  /* ACTIVITY */
+  border-radius: 10px;
+  background: #f7f7f7;
+  padding: 50px 30px 30px 30px;
+  margin: 0 0 1em 0;
+}
+
+.callbox_activity h3 {
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 75px; /* Adjust this value based on your icon size */
+}
+
+.callbox_activity h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28%;
+  transform: translateY(-50%);
+  width: 60px; /* Adjust based on your icon size */
+  height: 60px; /* Adjust based on your icon size */
+  background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_activity_icon_pink_120x120.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.callbox_download {  /* DOWNLOAD */
+  border-radius: 10px;
+  background: #f7f7f7;
+  padding: 50px 30px 30px 30px;
+  margin: 0 0 1em 0;
+}
+
+.callbox_download h3 {
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 75px; /* Adjust this value based on your icon size */
+}
+
+.callbox_download h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28%;
+  transform: translateY(-50%);
+  width: 60px; /* Adjust based on your icon size */
+  height: 60px; /* Adjust based on your icon size */
+  background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_download_icon_pink_120x120.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.callbox_remember {   /* REMEMBER */
+  border-radius: 10px;
+  background: #f7f7f7;
+  padding: 50px 30px 30px 30px;
+  margin: 0 0 1em 0;
+}
+
+.callbox_remember h3 {
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 75px; /* Adjust this value based on your icon size */
+}
+
+.callbox_remember h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28%;
+  transform: translateY(-50%);
+  width: 60px; /* Adjust based on your icon size */
+  height: 60px; /* Adjust based on your icon size */
+  background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_remember_icon_pink_120x120.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.callbox_reading {   /* READING */
+  border-radius: 10px;
+  background: #f7f7f7;
+  padding: 50px 30px 30px 30px;
+  margin: 0 0 1em 0;
+}
+
+.callbox_reading h3 {
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 75px; /* Adjust this value based on your icon size */
+}
+
+.callbox_reading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28%;
+  transform: translateY(-50%);
+  width: 60px; /* Adjust based on your icon size */
+  height: 60px; /* Adjust based on your icon size */
+  background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_reading_icon_pink_120x120.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/*********** ACCORDIAN ***********/
+
+.accordianedx {
+  width: 100%;
+  background-color: none;
+  margin-bottom: 1em;
+}
+
+input[type="checkbox"] {
+  display: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.accordianedx-item, .custom-background {
+  padding: .08em 2em .08em 2em;
+  background-color: #f7f7f7;
+  border-radius: 0.5em;
+}
+
+.custom-background {
+  background-color: #eae9e9;
+}
+
+.accordianedx-item:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.accordianedx-content {
+  color: #606060;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-height: 0;
+  opacity: 0;
+
+}
+
+.accordianedx-content-left {
+  flex: 0 0 20%;
+  padding-right: 15px;
+}
+
+.accordianedx-content-right {
+  flex: 0 0 80%;
+}
+
+.accordianedx-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.accordianedx-header {
+  font-size: 1em;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #606060;
+  cursor: pointer;
+  padding: 1em 0;
+}
+
+.plus {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.plus::before,
+.plus::after {
+  content: '';
+  position: absolute;
+  background-color: #000000;
+  transition: transform 0.25s ease-out;
+}
+
+.plus::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  margin-top: -1.5px;
+}
+
+.plus::after {
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  margin-left: -1.5px;
+}
+
+input[type="checkbox"]:checked ~ label .plus::before {
+  transform: rotate(180deg);
+}
+
+input[type="checkbox"]:checked ~ label .plus::after {
+  transform: rotate(90deg);
+}
+
+input[type="checkbox"]:checked ~ label {
+  color: #0083e9;
+}
+
+input[type="checkbox"]:checked ~ label .plus::before,
+input[type="checkbox"]:checked ~ label .plus::after {
+  background-color: #0083e9;
+}
+
+input[type="checkbox"]:checked ~ .accordianedx-content {
+  max-height: 1000px; /* Adjust based on your maximum content height */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .accordianedx-content {
+    flex-wrap: wrap;
+  }
+  
+  .accordianedx-content-left,
+  .accordianedx-content-right {
+    flex: 0 0 100%;
+  }
+  
+  .accordianedx-content-left {
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+}
+
+
+/*********** THREE COLUMN CARDS ***********/
+
+
+.edx-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 15px;
+    margin-bottom: 1em;
+}
+
+.edx-card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.33% - 10px);
+    min-width: 250px; /* Added to ensure minimum width */
+    flex-grow: 1; /* Added to allow cards to grow if needed */
+}
+
+.edx-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.edx-card p {
+    padding: 15px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .edx-container {
+        justify-content: center;
+    }
+}
+
+
+
+/*********** AUDIO PLAYER WITH IMAGE *********/
+
+
+       .edxaudioplayer {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            box-sizing: border-box;
+            border-top: 1px solid #f7f7f7;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 1em 0;
+            border-bottom: 1px solid #f7f7f7;
+        }
+
+        .image-container {
+            flex: 0 0 80px;
+            margin-right: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 80px;
+            max-height: 80px;
+            object-fit: cover;
+        }
+
+        .audio-container {
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        @media (max-width: 480px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container {
+                margin-right: 0;
+                margin-bottom: 1em;
+            }
+        }
+
+/*********** TABLE STYLES BASIC *********/
+        
+
+        /* Ensures styles are applied to tables within the edX wrapper */
+        .edx-simple-table-wrapper table {
+            border-collapse: collapse !important;
+            width: 100% !important;
+            font-size: 2em !important; /* Set font size to 1em */
+        }
+
+        .edx-simple-table-wrapper table th,
+        .edx-simple-table-wrapper table td {
+            text-align: left !important;
+            padding: 2em !important; /* Add padding for spacing */
+            border: none !important;
+        }
+
+        /* Specific style for the header row */
+        .edx-simple-table-wrapper table thead th {
+            background-color: #f7f7f7 !important; /* Set header row background color to #f7f7f7 */
+        }
+
+        /* Style for the first row in the tbody */
+        .edx-simple-table-wrapper table tbody tr:first-of-type {
+            background-color: #ffffff !important; /* Set the first body row background color to white */
+        }
+
+        /* Style for even rows in the tbody, starting from the second row */
+        .edx-simple-table-wrapper table tbody tr:nth-of-type(2n) {
+            background-color: #f7f7f7 !important;
+        }
