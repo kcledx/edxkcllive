@@ -229,7 +229,21 @@
   transition: all 0.3s ease;
   max-height: 0;
   opacity: 0;
-  padding: 0 1.5em;
+  padding: 0;
+}
+
+.kcledx_accordianedx-content-left {
+  flex: 0 0 18%;
+  padding-right: 0;
+}
+.kcledx_accordianedx-content-right {
+  flex: 0 0 90%;
+  padding: 0;
+  flex-direction: column;
+}
+.kcledx_accordianedx-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 .kcledx_accordianedx-content > *:first-child {
