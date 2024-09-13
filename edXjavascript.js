@@ -1,5 +1,5 @@
 
-  // JavaScript for slider functionality
+  // JavaScript for slider functionality start
   const sliderItems = document.querySelectorAll('.kcledx_slider-item');
   const sliderNav = document.querySelector('.kcledx_slider-nav');
   const prevBtn = document.querySelector('.kcledx_slider-prev');
