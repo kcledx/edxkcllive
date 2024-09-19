@@ -125,12 +125,12 @@
     background-repeat: no-repeat;
   }
   
-  .kcledx_callbox_learnmore h3::before { background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_learnmore_icon_pink_120x120.png'); }
-  .kcledx_callbox_outcomes h3::before { background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_learningoutcomes_icon_color_120x120.png'); }
-  .kcledx_callbox_activity h3::before { background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_activity_icon_pink_120x120.png'); }
+  .kcledx_callbox_learnmore h3::before { background-image: url('https://github.com/kcledx/edxkcllive/kcl_edx_learnmore_icon_pink_120x120.png'); }
+  .kcledx_callbox_outcomes h3::before { background-image: url('https://github.com/kcledx/edxkcllive/kcl_edx_learningoutcomes_icon_color_120x120.png'); }
+  .kcledx_callbox_activity h3::before { background-image: url('https://github.com/kcledx/edxkcllive/kcl_edx_activity_icon_pink_120x120.png'); }
   .kcledx_callbox_download h3::before { background-image: url('https://kcledx.github.io/edxkcllive/kcl_edx_download_icon_pink_120x120.png'); }
-  .kcledx_callbox_remember h3::before { background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_remember_icon_pink_120x120.png'); }
-  .kcledx_callbox_reading h3::before { background-image: url('https://courses.edx.org/asset-v1:KingsCollegeLondon+KIASS_x2+1T2025+type@asset+block@kcl_edx_reading_icon_pink_120x120.png'); }
+  .kcledx_callbox_remember h3::before { background-image: url('https://github.com/kcledx/edxkcllive/kcl_edx_remember_icon_pink_120x120.png'); }
+  .kcledx_callbox_reading h3::before { background-image: url('https://github.com/kcledx/edxkcllive/kcl_edx_reading_icon_pink_120x120.png'); }
   
   /* Content padding for all callout boxes except basic and basicline */
   .kcledx_callbox_learnmore > *:not(h3),
