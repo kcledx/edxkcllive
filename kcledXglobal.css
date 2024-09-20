@@ -126,7 +126,7 @@
   }
   
   .kcledx_callbox_learnmore h3::before { background-image: url('https://github.com/kcledx/edxkcllive/kcl_edx_learnmore_icon_pink_120x120.png'); }
-  .kcledx_callbox_outcomes h3::before { background-image: url('../kcl_edx_learningoutcomes_icon_color_120x120.png'); }
+  .kcledx_callbox_outcomes h3::before { background-image: url('/main/kcl_edx_learningoutcomes_icon_color_120x120.png'); }
   .kcledx_callbox_activity h3::before { background-image: url('https://github.com/kcledx/edxkcllive/kcl_edx_activity_icon_pink_120x120.png'); }
   .kcledx_callbox_download h3::before { background-image: url('https://github.com/kcledx/edxkcllive/kcl_edx_download_icon_pink_120x120.png'); }
   .kcledx_callbox_remember h3::before { background-image: url('https://github.com/kcledx/edxkcllive/kcl_edx_remember_icon_pink_120x120.png'); }
