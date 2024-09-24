@@ -26,7 +26,57 @@
     font-weight: bold;
     font-size: 0.8em;
   }
+
+   /*********** BADGES WITH FONT AWESOME ICONS CSS linked in Advanced Settings - Global CSS ***********/
+   .kcledx-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    border-radius: 9999px;
+    margin-bottom: 2em;
+    line-height: 1.2;
+    font-size: 0.8em;
+  }
   
+  .kcledx-badge-optional {  /* OPTIONAL CALL OUT BOX */
+    background-color: #BCAFA8; /* Kings Brand Soft Grey */
+    color: white;
+  }
+  
+  .kcledx-badge-optional::before {
+    content: "\f06e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 0.5em;
+  }
+  
+  .kcledx-badge-keypoints {  /* KEY POINTS CALL OUT BOX */
+    background-color: #28C382; /* Kings Brand Pea Green */
+    color: white;
+  }
+  
+  .kcledx-badge-keypoints::before {
+    content: "\f022";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 0.5em;
+  }
+  
+  .kcledx-badge-recommended {  /* RECOMMENDED POINTS CALL OUT BOX */
+    background-color: #FC5E72; /* Kings Brand Soft Pink */
+    color: white;
+  }
+  
+  .kcledx-badge-recommended::before {
+    content: "\f005";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 0.5em;
+  }
+  
+  .kcledx-text-black {
+    color: black;
+  }
   
   /* CONTROL PANEL - EDIT THESE VALUES TO UPDATE ALL CALLOUT BOXES */
   .kcledx-callout-control {
