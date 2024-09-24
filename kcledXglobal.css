@@ -388,7 +388,7 @@
 }
 
 .kcledx_accordianedx input[type="checkbox"]:checked ~ .kcledx_accordianedx-content {
-  max-height: 1000px;
+  max-height: none;
   opacity: 1;
   transform: translateY(0);
   padding-bottom: 1.5em;
