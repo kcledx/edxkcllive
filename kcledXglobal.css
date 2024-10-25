@@ -283,11 +283,11 @@
 }
 
 .kcledx_accordianedx-content-left {
-  flex: 0 0 18%;
+  flex: 0 0 13%;
   padding-right: 0;
 }
 .kcledx_accordianedx-content-right {
-  flex: 0 0 80%;
+  flex: 0 0 85%;
   padding: 0;
   flex-direction: column;
 }
