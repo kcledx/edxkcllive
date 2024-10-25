@@ -137,6 +137,28 @@
     max-width: 100%;
     height: auto;
   }
+
+    /* CALLOUT BOXES with INSTRUCTOR MESSAGE */
+  .kcledx_callbox_basic_with_instructor_left_quotes {
+    flex: 0 0 16%;
+    padding-right: 0px;
+    box-sizing: border-box;
+  }
+  
+  .kcledx_callbox_basic_with_instructor_right_quotes {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  
+  .kcledx_callbox_basic_with_instructor_left_quotes img {
+    width: var(--instructor-image-size);
+    height: var(--instructor-image-size);
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+  }
+
+  
   
   .kcledx_callbox_learnmore,
   .kcledx_callbox_outcomes,
