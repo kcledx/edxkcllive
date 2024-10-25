@@ -150,8 +150,13 @@
     padding: 0;
     flex-direction: column;
   }
-
-  
+  .kcledx_callbox_basic_with_instructor_left_quotes img {
+    width: var(--instructor-image-size);
+    height: var(--instructor-image-size);
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+  }
  
 
 
