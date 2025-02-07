@@ -267,30 +267,21 @@
   }
   
   
-/*********** ACCORDIAN ***********/
+  
+  /*********** ACCORDIAN ***********/
 .kcledx_accordianedx {
   width: 100%;
   background-color: transparent;
   margin-bottom: 2em;
   line-height: 1.5;
-  display: block;
-  overflow: visible;
-}
-
-/* CLEARFIX TO FORCE PROPER REFLOW */
-.kcledx_accordianedx::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .kcledx_accordianedx input[type="checkbox"] {
   display: none;
 }
 
-.kcledx_accordianedx-item,
-.kcledx_custom-background {
-  padding: 0.08em 2em;
+.kcledx_accordianedx-item, .kcledx_custom-background {
+  padding: .08em 2em;
   background-color: #f7f7f7;
   border-radius: 0.5em;
 }
@@ -303,15 +294,63 @@
   margin-bottom: 1em;
 }
 
-/* ACCORDIAN CONTENT IS ALWAYS IN THE FLOW, BUT INITIALLY COLLAPSED */
 .kcledx_accordianedx-content {
   color: #606060;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+  transition: all 0.3s ease;
   max-height: 0;
   opacity: 0;
   padding: 0;
+}
+
+.kcledx_accordianedx-content-left {
+  flex: 0 0 13%;
+  padding-right: 0;
+}
+.kcledx_accordianedx-content-right {
+  flex: 0 0 85%;
+  padding: 0;
+  flex-direction: column;
+}
+.kcledx_accordianedx-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.kcledx_accordianedx-content > *:first-child {
+  margin-top: 0.5em !important;
+}
+
+.kcledx_accordianedx-content > *:last-child {
+  margin-bottom: 0.5em !important;
+}
+
+.kcledx_accordianedx-content p {
+  margin-top: 0 !important;
+  margin-bottom: 0.5em !important;
+}
+
+.kcledx_accordianedx-content p + p,
+.kcledx_accordianedx-content p + ul,
+.kcledx_accordianedx-content p + ol {
+  margin-top: 0.5em !important;
+}
+
+.kcledx_accordianedx-content ul,
+.kcledx_accordianedx-content ol {
+  margin-top: 0 !important;
+  margin-bottom: 0.5em !important;
+  padding-left: 1.5em !important;
+}
+
+.kcledx_accordianedx-content li {
+  margin-bottom: 0.25em !important;
+}
+
+.kcledx_accordianedx-header {
+  font-size: 1em;
 }
 
 .kcledx_accordianedx label {
@@ -323,55 +362,58 @@
   padding: 1em 0;
 }
 
-/* PLUS ICON STYLING */
 .kcledx_plus {
   position: relative;
   width: 20px;
   height: 20px;
   display: inline-block;
 }
+
 .kcledx_plus::before,
 .kcledx_plus::after {
   content: '';
   position: absolute;
-  background-color: #000;
-  /* REMOVED TRANSITION FOR INSTANT CHANGE (NO EASING, OPACITY OR EFFECTS) */
-  /* transition: transform 0.25s ease-out, opacity 0.25s ease-out; */
+  background-color: #000000;
+  transition: transform 0.25s ease-out;
 }
+
 .kcledx_plus::before {
-  /* HORIZONTAL BAR (STAYS VISIBLE) */
   top: 50%;
   left: 0;
   width: 100%;
   height: 3px;
   margin-top: -1.5px;
-  transform: rotate(0deg);
 }
+
 .kcledx_plus::after {
-  /* VERTICAL BAR (REMOVED ON CHECKED STATE TO CREATE MINUS ICON) */
   top: 0;
   left: 50%;
   width: 3px;
   height: 100%;
   margin-left: -1.5px;
-  transform-origin: center;
-  transform: rotate(0deg);
 }
 
-/* WHEN THE CHECKBOX IS CHECKED, CHANGE HEADER COLOUR */
+.kcledx_accordianedx input[type="checkbox"]:checked ~ label .kcledx_plus::before {
+  transform: rotate(180deg);
+}
+
+.kcledx_accordianedx input[type="checkbox"]:checked ~ label .kcledx_plus::after {
+  transform: rotate(90deg);
+}
+
 .kcledx_accordianedx input[type="checkbox"]:checked ~ label {
   color: #0083e9;
 }
 
-/* ON CHECKED STATE, REMOVE THE VERTICAL BAR INSTANTLY TO DISPLAY A MINUS ICON */
+.kcledx_accordianedx input[type="checkbox"]:checked ~ label .kcledx_plus::before,
 .kcledx_accordianedx input[type="checkbox"]:checked ~ label .kcledx_plus::after {
-  display: none;
+  background-color: #0083e9;
 }
 
-/* ANIMATE THE CONTENT OPEN/CLOSED */
 .kcledx_accordianedx input[type="checkbox"]:checked ~ .kcledx_accordianedx-content {
-  max-height: 1000px;  /* ADJUST THIS VALUE IF NEEDED */
+  max-height: none;
   opacity: 1;
+  transform: translateY(0);
   padding-bottom: 1.5em;
 }
 
@@ -381,8 +423,6 @@
     flex-direction: column;
   }
 }
-
-
 
   
   
