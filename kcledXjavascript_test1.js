@@ -52,7 +52,7 @@
 
   // setInterval(nextSlide, 15000); // Auto-advance the slider every 15 seconds
 
-// accordion.js
+// kcledXjavascript_test1.js
 if (!window.accordionScriptLoaded) {
   window.accordionScriptLoaded = true;
 
@@ -63,25 +63,28 @@ if (!window.accordionScriptLoaded) {
         checkbox.addEventListener('change', function() {
           var container = this.closest('.kcledx_accordianedx');
           if (container) {
-            // Toggle display to force a reflow
+            // Toggle display to force an immediate reflow
             container.style.display = 'none';
-            var dummy = container.offsetHeight; // force reflow
+            var dummy = container.offsetHeight; // Force reflow by reading offsetHeight
             container.style.display = 'block';
 
-            // Dispatch a resize event to force the layout to recalc the footer position
-            window.dispatchEvent(new Event('resize'));
+            // Use requestAnimationFrame to ensure the DOM has updated, then force reflow via the zoom property
+            requestAnimationFrame(function() {
+              container.style.zoom = '1';
+              var dummy2 = container.offsetWidth; // Read property to force reflow
+              container.style.zoom = ''; // Remove the temporary inline style
+              // Dispatch a resize event as an extra nudge for layout recalculation
+              window.dispatchEvent(new Event('resize'));
+            });
           }
         });
       });
     }
 
-    // Attach listeners after a slight delay to be sure the page is fully rendered
     if (document.readyState === 'complete') {
-      setTimeout(attachAccordionListeners, 500);
+      attachAccordionListeners();
     } else {
-      window.addEventListener('load', function() {
-        setTimeout(attachAccordionListeners, 500);
-      });
+      window.addEventListener('load', attachAccordionListeners);
     }
   })();
 }
