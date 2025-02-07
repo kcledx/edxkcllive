@@ -63,21 +63,25 @@ if (!window.accordionScriptLoaded) {
         checkbox.addEventListener('change', function() {
           var container = this.closest('.kcledx_accordianedx');
           if (container) {
+            // Toggle display to force a reflow
             container.style.display = 'none';
-            // Accessing offsetHeight forces a reflow
-            var dummy = container.offsetHeight;
+            var dummy = container.offsetHeight; // force reflow
             container.style.display = 'block';
+
+            // Dispatch a resize event to force the layout to recalc the footer position
+            window.dispatchEvent(new Event('resize'));
           }
         });
       });
     }
 
-    // IF THE DOCUMENT IS ALREADY FULLY LOADED, EXECUTE IMMEDIATELY
+    // Attach listeners after a slight delay to be sure the page is fully rendered
     if (document.readyState === 'complete') {
-      attachAccordionListeners();
+      setTimeout(attachAccordionListeners, 500);
     } else {
-      // OTHERWISE, ATTACH TO THE WINDOW LOAD EVENT
-      window.addEventListener('load', attachAccordionListeners);
+      window.addEventListener('load', function() {
+        setTimeout(attachAccordionListeners, 500);
+      });
     }
   })();
 }
